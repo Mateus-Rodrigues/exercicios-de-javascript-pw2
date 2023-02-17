@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!--Crie uma página onde o usuário deverá preencher 3 campos, sendo que cada um
+   deverá receber um número.
+   Crie uma função em JavaScript que deverá receber os valores digitados nos 3 campos e
+   armazená-los em 3 variáveis. Em seguida, deverá ser feito um cálculo para descobrir a
+   média dos 3 números.
+   O resultado deverá ser exibido na página.-->
+
+    <div>
+        <input type="number" name="n1" id="n1" placeholder="Digite o 1° numero">
+        <input type="number" name="n2" id="n2" placeholder="Digite o 2° numero">
+        <input type="number" name="n3" id="n3" placeholder="Digite o 3° numero">
+
+        <button onclick="somar()">Calcular</button>
+
+       <h2 id="res"> O Resultado da Média é: </h2>
+    </div>
+    <script>
+        function somar(){
+            var n1, n2, n3, resultado;
+            n1 = document.getElementById("n1").value
+            n2 = document.getElementById("n2").value
+            n3 = document.getElementById("n3").value
+
+            resultado = (parseInt(n1) + parseInt(n2) + parseInt(n3)) / 3;
+            document.getElementById("res").innerHTML = "resultado da Média é: " + resultado;
+        }
+
+
+    </script>
+
+    <a href="exercicio2.html">exercicio 2</a>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo idade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--
+        Crie uma página onde o usuário deverá preencher o seu ano de nascimento e em uma
+        função JavaScript faça o cálculo para saber a idade da pessoa, imaginando que a
+        pessoa já tenha feito aniversário no ano corrente e exiba a idade na página.
+        UHlize o código abaixo para pegar automaHcamente o ano atual.
+    -->
+
+    <div>
+        <h1>Calculo de Idade</h1>
+
+        <input type="number" name="idade" id="idade" placeholder="em que ano você nasceu">
+        <button onclick="calcular()">calcular</button>
+        <h2 id="res">A sua Idade é:</h2>
+    </div>
+
+    <script>
+        function calcular(){
+            var dataAtual = new Date();
+            var anoAtual = dataAtual.getFullYear();
+            var idade;
+
+            idade = document.getElementById("idade").value;
+
+             
+        }
+    </script>
+
+</body>
+</html>
